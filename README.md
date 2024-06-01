@@ -56,9 +56,13 @@ We train the individual models using TensorFlow and apply various regularization
 
 Stacking involves training a meta-model to combine predictions from multiple base models. This method leverages the strengths of each model to improve overall classification performance.
 
+<img src="Images/Stacking.jpg" alt="Stacking" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
+
 ## Evaluation and Validation
 
 We evaluate the ensemble model using standard metrics such as accuracy, precision, recall, and F1-score. Extensive validation tests ensure the model's generalization and robustness.
+
+<img src="Images/Classification_Report.png" alt="CP" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
 
 ## Scalability and Efficiency
 
@@ -90,6 +94,8 @@ The meta-model, a neural network, is trained on the outputs of the base models. 
 
 We evaluate the ensemble model using metrics such as accuracy, precision, recall, and F1-score on a holdout test set. Comparisons with individual models and a simple averaging ensemble demonstrate the effectiveness of the stacking approach.
 
+
+
 ## Implementation Details
 
 ### Data Preprocessing
@@ -108,6 +114,8 @@ The meta-model is trained on a validation set derived from the training data. Th
 
 We evaluate the ensemble model using the same metrics applied to individual models. Comparative analysis shows the advantages of the ensemble approach.
 
+<img src="Images/Model_Accuracy_Comparisions.png" alt="Comp" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
+
 ### Tools and Technologies
 
 We use Python libraries like TensorFlow, Keras, NumPy, and Matplotlib for model training, evaluation, and visualization.
@@ -118,21 +126,31 @@ We use Python libraries like TensorFlow, Keras, NumPy, and Matplotlib for model 
 
 Our CNN model achieved an accuracy of 78.91%, demonstrating robust classification performance on the CIFAR-10 dataset.
 
+<img src="Images/Cnn_Images.png" alt="CNN" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
+
 ### RNN
 
 The RNN model, trained on image sequences, achieved an accuracy of 49.86%, highlighting its limitations in spatial feature recognition.
+
+<img src="Images/Rnn_Images.png" alt="RNN" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
 
 ### VGG16
 
 Using transfer learning, the VGG16 model achieved an accuracy of 61.51%, leveraging pre-trained features from ImageNet.
 
+<img src="Images/Vgg16_Images.png" alt="VGG" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
+
 ### Ensemble Model Using Stacking
 
 The stacked ensemble model achieved an accuracy of 83.52%, outperforming individual models and demonstrating the benefits of the ensemble approach.
 
+<img src="Images/Ensemble_Images.png" alt="EI" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
+
 ### Comparative Analysis
 
 Comparative analysis shows the ensemble model's superior performance across all metrics compared to individual models.
+
+<img src="Images/Comparision_Models.png" alt="Comp_M" style="width: 600px; display: block; margin-left: auto; margin-right: auto;">
 
 ## Conclusion
 
